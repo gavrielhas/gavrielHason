@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <div className="logo">LOGO</div>
+      <div className="logo "> Logo</div>
 
-      <nav className="navbar-nav">
+      <nav className="nav navbar-expand-sm px-sm-5 justify-content-end">
         <ul>
           <li>
             <Link to="/">Home</Link>
