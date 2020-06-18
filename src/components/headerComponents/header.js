@@ -6,7 +6,7 @@ function Header() {
     <header>
       <div className="logo "> Logo</div>
 
-      <nav className="nav navbar-expand-sm px-sm-5 justify-content-end">
+      <nav className="nav navbar-inverse navbar-expand-sm px-sm-5">
         <ul>
           <li>
             <Link to="/">Home</Link>
