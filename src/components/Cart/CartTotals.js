@@ -36,6 +36,13 @@ export default function CartTotals({ value, history }) {
               clearCart={clearCart}
               history={history}
             />*/}
+            {/*
+            <PayPalButton
+              total={cartTotal}
+              clearCart={clearCart}
+              history={history}
+            />
+            */}
           </div>
         </div>
       </div>
