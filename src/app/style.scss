@@ -180,7 +180,11 @@ header {
   margin: 0.2rem 0.5rem 0.2rem 0;
   transition: all 0.5s ease-in-out;
 }
-
+.buttonCart {
+  background: transparent;
+  border: none;
+  color: $lightblue;
+}
 .btn-black {
   background: transparent;
   text-transform: capitalize;
