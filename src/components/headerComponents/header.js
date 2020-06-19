@@ -5,7 +5,6 @@ function Header() {
   return (
     <header>
       <div className="logo "> Logo</div>
-
       <nav className="nav navbar-inverse navbar-expand-sm px-sm-5">
         <ul>
           <li>
