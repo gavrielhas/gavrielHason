@@ -114,3 +114,10 @@ export const detailProduct = {
   count: 0,
   total: 0,
 };
+
+export const logo = [
+  {
+    id: 9,
+    img: "img/LOGO-1.png",
+  },
+];

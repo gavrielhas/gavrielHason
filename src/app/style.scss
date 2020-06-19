@@ -4,14 +4,15 @@ header {
   position: relative;
   display: block;
   width: 100%;
-  background: $black;
+  background: $lightgray;
   color: $white;
   height: 90px;
 
   .logo {
-    position: absolute;
+    position: relative;
+    display: block;
     top: 50%;
-    left: 15px;
+    left: 2rem;
     //  @include translateY(-50%);
   }
   /*
@@ -216,12 +217,12 @@ header {
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: $lightgray;
+    background: $lightblue;
   }
 
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: #a90000;
+    background: #a97400;
   }
 
   /* Position and sizing of clickable cross button */

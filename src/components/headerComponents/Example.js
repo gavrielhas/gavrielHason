@@ -11,16 +11,23 @@ export default class Example extends React.Component {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <div className="justify-content-right">
-        <Menu>
-          <Link id="about" className="menu-item" to="/">
-            Home
+        <Menu right>
+          <Link id="about" className="menu-item text-capitalize" to="/">
+            home
           </Link>
-          <Link className="menu-item" id="home" to="/ProductList">
-            Products list
+          <Link
+            className="menu-item text-capitalize"
+            id="home"
+            to="/ProductList"
+          >
+            product list
           </Link>
 
-          <Link id="contact" className="menu-item" to="/">
+          <Link id="contact" className="menu-item text-capitalize" to="/">
             Contact
+          </Link>
+          <Link id="cart" className="menu-item text-capitalize" to="/cart">
+            cart
           </Link>
         </Menu>
       </div>

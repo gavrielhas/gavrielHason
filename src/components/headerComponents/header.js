@@ -1,35 +1,24 @@
 import React from "react";
 import Example from "./Example";
+import logo from "./LOGO-1.png";
+import { Link } from "react-router-dom";
+
+console.log(logo);
 
 function Header() {
   return (
     <header>
       <div className="nav navbar-inverse">
+        <div className="logo">
+          <Link to="/">
+            <img
+              src={logo}
+              style={{ width: "5rem", height: "5rem" }}
+              alt="brand"
+            />
+          </Link>
+        </div>
         <Example />
-        {/*
-      <div className="logo "> Logo</div>
-      <nav className="nav navbar-inverse navbar-expand-sm px-sm-5">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/ProductList">Products list</Link>
-          </li>
-          <li>
-            <Link to="/">Contact</Link>
-          </li>
-          <li className="last">
-            <Link to="/cart">
-              <button>
-                <i className="fas fa-cart-plus">my cart</i>
-              </button>
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      */}
-        <div className="logo "> Logo</div>
       </div>
     </header>
   );

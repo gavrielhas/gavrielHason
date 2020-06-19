@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { storeProducts, detailProduct } from "../data";
+import { storeProducts, detailProduct, logo } from "../data";
 
 const ProductContext = React.createContext();
 
@@ -13,6 +13,7 @@ class ProductProvider extends Component {
     cartSubTotal: 0,
     cartTax: 0,
     cartTotal: 0,
+    logo,
   };
   componentDidMount() {
     this.setProducts();
