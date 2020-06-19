@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Example from "./Example";
 
 function Header() {
   return (
     <header>
+      <div className="nav navbar-inverse">
+        <Example />
+        {/*
       <div className="logo "> Logo</div>
       <nav className="nav navbar-inverse navbar-expand-sm px-sm-5">
         <ul>
@@ -25,6 +29,9 @@ function Header() {
           </li>
         </ul>
       </nav>
+      */}
+        <div className="logo "> Logo</div>
+      </div>
     </header>
   );
 }
