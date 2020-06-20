@@ -7,15 +7,15 @@ header {
   background: $lightgray;
   color: $white;
   height: 90px;
-
-  .logo {
-    position: relative;
-    display: block;
-    top: 50%;
-    left: 2rem;
-    //  @include translateY(-50%);
-  }
-  /*
+}
+.logo {
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 2rem;
+  //  @include translateY(-50%);
+}
+/*
   nav,
   nav ul,
   nav ul li {
@@ -46,231 +46,218 @@ header {
 }
 */
 
-  // product
-  .products {
-    padding: 4rem 0;
-  }
-  .section-title h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 5rem;
-    text-transform: capitalize;
-    letter-spacing: var(--mainSpacing);
-  }
-  .products-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
-  }
-  .img-container {
-    position: relative;
-    overflow: hidden;
-  }
-  .bag-btn {
-    position: absolute;
-    top: 70%;
-    right: 0;
-    background: var(--primaryColor);
-    border: none;
-    text-transform: uppercase;
-    padding: 0.5rem 0.75rem;
-    letter-spacing: var(--mainSpacing);
-    font-weight: bold;
-    transition: var(--mainTransition);
-    transform: translateX(101%);
-    cursor: pointer;
-  }
-  .bag-btn:hover {
-    color: var(--mainWhite);
-  }
-  .fa-shopping-cart {
-    margin-right: 0.5rem;
-  }
-  .img-container:hover .bag-btn {
-    transform: translateX(0);
-  }
-  .product-img {
-    display: block;
-    width: 100%;
-    min-height: 12rem;
-    transition: var(--mainTransition);
-  }
-  .img-container:hover .product-img {
-    opacity: 0.5;
-  }
+// product
+.products {
+  padding: 4rem 0;
+}
 
-  .product h3 {
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-    letter-spacing: var(--mainSpacing);
-    text-align: center;
-  }
+.products-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.bag-btn {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  transform: translateX(101%);
+  cursor: pointer;
+}
 
-  .product h4 {
-    margin-top: 0.7rem;
-    letter-spacing: var(--mainSpacing);
-    color: var(--primaryColor);
-    text-align: center;
-  }
-  .fa-cart-plus {
-    font-size: 1rem;
-    text-transform: capitalize;
-    cursor: pointer;
-  }
-  // end of product
+.fa-shopping-cart {
+  margin-right: 0.5rem;
+}
+.img-container:hover .bag-btn {
+  transform: translateX(0);
+}
+.product-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+}
+.img-container:hover .product-img {
+  opacity: 0.5;
+}
+
+.product h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.product h4 {
+  margin-top: 0.7rem;
+  text-align: center;
+}
+.fa-cart-plus {
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+// end of product
+.card {
+  border: 0.04rem solid $borderColorProduct;
+  box-shadow: 2px 2px 5px 0px $borderColorProduct;
+  border-color: transparent;
+  transition: all 1s linear;
+}
+.card-footer {
+  background: $productFooter;
+  background: transparent;
+  border-top: transparent;
+  transition: all 1s linear;
+}
+:hover {
   .card {
-    border-color: transparent;
-    transition: all 1s linear;
+    border: 0.04rem solid $borderColorProduct;
+    box-shadow: 2px 2px 5px 0px $borderColorProduct;
   }
+
   .card-footer {
-    background: transparent;
-    border-top: transparent;
-    transition: all 1s linear;
+    background: $productFooter;
   }
-  :hover {
-    .card {
-      border: 0.04rem solid $borderColorProduct;
-      box-shadow: 2px 2px 5px 0px $borderColorProduct;
-    }
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.img-container:hover .card-img-top {
+  transform: scale(1.2);
+}
+.card-img-top {
+  transition: all 1s linear;
+}
+.cart-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem 0.4rem;
+  background: $lightblue;
+  border: none;
+  color: $white;
+  font-size: 1.4rem;
+  border-radius: 0.5rem 0 0 0;
+  transition: all 1s linear;
+}
+.img-container:hover .card-btn {
+  transform: translate(0, 0);
+}
+.card-btn:hover {
+  color: $blue;
+  cursor: pointer;
+}
+.ButtonContainer {
+  border: 0.05rem solid $lightblue;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
+  color: $lightblue;
+  border-radius: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.buttonCart {
+  background: transparent;
+  border: none;
+  color: $lightblue;
+}
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: $black;
+  border-radius: 0 !important;
+  border: 0.1rem solid $black !important;
+}
+.btn-black:hover {
+  background: $black !important;
+  color: $white !important;
+}
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: $yellow;
+}
 
-    .card-footer {
-      background: $productFooter;
-    }
-  }
-  .img-container {
-    position: relative;
-    overflow: hidden;
-  }
-  .img-container:hover .card-img-top {
-    transform: scale(1.2);
-  }
-  .card-img-top {
-    transition: all 1s linear;
-  }
-  .cart-btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0.2rem 0.4rem;
-    background: $lightblue;
-    border: none;
-    color: $white;
-    font-size: 1.4rem;
-    border-radius: 0.5rem 0 0 0;
-    transition: all 1s linear;
-  }
-  .img-container:hover .card-btn {
-    transform: translate(0, 0);
-  }
-  .card-btn:hover {
-    color: $blue;
-    cursor: pointer;
-  }
-  .ButtonContainer {
-    text-transform: capitalize;
-    font-size: 1.4rem;
-    background: transparent;
-    border: 0.05rem solid $lightblue;
-    color: $lightblue;
-    border-radius: 0.5rem;
-    padding: 0.2rem 0.5rem;
-    cursor: pointer;
-    margin: 0.2rem 0.5rem 0.2rem 0;
-    transition: all 0.5s ease-in-out;
-  }
-  .buttonCart {
-    background: transparent;
-    border: none;
-    color: $lightblue;
-  }
-  .btn-black {
-    background: transparent;
-    text-transform: capitalize;
-    font-size: 0.8rem !important;
-    color: $black;
-    border-radius: 0 !important;
-    border: 0.1rem solid $black !important;
-  }
-  .btn-black:hover {
-    background: $black !important;
-    color: $white !important;
-  }
-  .cart-icon {
-    cursor: pointer;
-    font-size: 1.2rem;
-    color: $yellow;
-  }
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
 
-  /* Position and sizing of burger button */
-  .bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 36px;
-  }
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $lightblue;
+}
 
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: $lightblue;
-  }
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a97400;
+}
 
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: #a97400;
-  }
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
 
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
 
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #bdc3c7;
-  }
-
-  /*
+/*
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-  }
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
 
-  /* General sidebar styles */
-  .bm-menu {
-    background: $lightgray;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
+/* General sidebar styles */
+.bm-menu {
+  background: $lightgray;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
 
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
-  }
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
 
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-  }
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
 
-  /* Individual item */
-  .bm-item {
-    display: inline-block;
-    color: $black;
-  }
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: $black;
+}
 
-  /* Styling of overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-  }
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
