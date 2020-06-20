@@ -19,6 +19,16 @@ function Header() {
           </Link>
         </div>
         <Example />
+        <div className="headerCart">
+          <Link className="ml-6" to="/cart">
+            <div className="ButtonContainer">
+              <span className="mr-2">
+                <i className="fas fa-cart-plus"></i>
+              </span>
+              my cart
+            </div>
+          </Link>
+        </div>
       </div>
     </header>
   );
