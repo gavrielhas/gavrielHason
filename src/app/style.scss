@@ -266,3 +266,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   right: 6rem;
   top: 1.6rem;
 }
+.img-fluid {
+  object-fit: cover;
+}
+.backgroundImage {
+  background-image: url(../components/headerComponents/nuts-1.jpg);
+}

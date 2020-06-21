@@ -1,9 +1,12 @@
 import React from "react";
+import nuts from "../headerComponents/nuts-1.jpg";
 
 function Homepage() {
   return (
     <div className="container-fluid">
       <h1>Home Page Content</h1>
+      <div className="backgroundImage"></div>
+      <h1>Try our nuts</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
