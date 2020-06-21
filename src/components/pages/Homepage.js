@@ -7,7 +7,7 @@ function Homepage() {
       <h1>Home Page Content</h1>
       <section>
         <div className="BorderImg">
-          <div className=" img-fluid">
+          <div className=" img-fluid2">
             <h1 className="img-text">
               <Link to="/ProductList">
                 <button className="ButtonImg">To our nuts</button>
