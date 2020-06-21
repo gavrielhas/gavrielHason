@@ -15,6 +15,7 @@ header {
   left: 2rem;
   //  @include translateY(-50%);
 }
+
 /*
   nav,
   nav ul,
@@ -266,9 +267,33 @@ Note: Beware of modifying this element as it can break the animations - you shou
   right: 6rem;
   top: 1.6rem;
 }
+
 .img-fluid {
-  object-fit: cover;
+  background-image: url(../../components/headerComponents/nuts-1.jpg);
+  height: 100%;
+  width: 100%;
+  height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.backgroundImage {
-  background-image: url(../components/headerComponents/nuts-1.jpg);
+.img-text {
+  text-align: center;
+  position: relative;
+  padding-top: 14rem;
+  border-radius: 0.05rem;
+  border: 0.05rem;
+}
+.BorderImg {
+  border: 0.05rem solid;
+  color: #fa6f48;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.ButtonImg {
+  text-transform: capitalize;
+  font-size: 4rem;
+  background-color: #faed3c;
 }
