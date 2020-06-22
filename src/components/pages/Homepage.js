@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Homepage() {
   return (
     <React.Fragment>
-      <h1>Home Page Content</h1>
-      <section>
+      <h1 className="text-center header py-3">Pai-delivery</h1>
+      <section className="py-3">
         <div className="BorderImg">
           <div className=" img-fluid2">
             <h1 className="img-text">
@@ -16,8 +16,8 @@ function Homepage() {
           </div>
         </div>
 
-        <h1 className="">Try our nuts</h1>
-        <p>
+        <h1 className="pl-5 pr-5 py-3">Try our nuts</h1>
+        <p className="pl-5 pr-5">
           Our nuts is well selected, descripiton about the products Lorem Ipsum
           is simply dummy text of the printing and typesetting industry. Lorem
           Ipsum has been the industry's standard dummy text ever since the

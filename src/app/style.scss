@@ -15,7 +15,13 @@ header {
   left: 2rem;
   //  @include translateY(-50%);
 }
-
+a {
+  line-height: normal;
+  color: $black;
+}
+strong {
+  font-size: 19px;
+}
 /*
   nav,
   nav ul,
@@ -298,6 +304,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   cursor: pointer;
   border: none;
 }
-.footer {
-  background-color: #fa6f48;
+footer {
+  background-color: $lightgray;
 }
