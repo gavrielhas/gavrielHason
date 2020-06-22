@@ -24,15 +24,11 @@ export default class Example extends React.Component {
     this.setState({ menuOpen: false });
   }
 
-  // This can be used to toggle the menu, e.g. when using a custom icon
-  // Tip: You probably want to hide either/both default icons if using a custom icon
-  // See https://github.com/negomi/react-burger-menu#custom-icons
   toggleMenu() {
     this.setState((state) => ({ menuOpen: !state.menuOpen }));
   }
 
   render() {
-    // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <div>
         <Menu
