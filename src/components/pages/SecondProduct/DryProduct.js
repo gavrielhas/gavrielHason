@@ -16,7 +16,7 @@ export default class DryProduct extends Component {
                 className="img-container p-5"
                 onClick={() => value.DryhandleDetail(id)}
               >
-                <Link to="/details">
+                <Link to="/details2">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <button
