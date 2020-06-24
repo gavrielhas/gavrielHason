@@ -55,6 +55,15 @@ export default class Example extends React.Component {
 
           <Link
             onClick={() => this.closeMenu()}
+            className="menu-item text-capitalize"
+            id="home"
+            to="/DryProductList"
+          >
+            dry product list
+          </Link>
+
+          <Link
+            onClick={() => this.closeMenu()}
             id="contact"
             className="menu-item text-capitalize"
             to="/"

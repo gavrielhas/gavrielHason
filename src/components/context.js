@@ -196,10 +196,10 @@ class ProductProvider extends Component {
     product.count = product.count - 1;
 
     if (product.count === 0) {
-      if (product.id < 9) {
+      if (product.id < 25) {
         this.removeItem(id);
       }
-      if (product.id > 9) {
+      if (product.id > 24) {
         this.removeDryItem(id);
       }
     } else {
@@ -274,6 +274,7 @@ class ProductProvider extends Component {
           increment: this.increment,
           decrement: this.decrement,
           removeItem: this.removeItem,
+          removeDryItem: this.removeDryItem,
           clearCart: this.clearCart,
         }}
       >
