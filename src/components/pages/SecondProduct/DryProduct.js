@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { ProductConsumer } from "../context";
+import { ProductConsumer } from "../../context";
 import PropTypes from "prop-types";
 
-export default class Product extends Component {
+export default class DryProduct extends Component {
   render() {
-    const { id, title, img, price, inCart } = this.props.product;
+    const { id, title, img, price, inCart } = this.props.Dryproduct;
 
     return (
       <div className="col-9 mx-auto col-md-6 col-lg-3 my-3">
@@ -14,7 +14,7 @@ export default class Product extends Component {
             {(value) => (
               <div
                 className="img-container p-5"
-                onClick={() => value.handleDetail(id)}
+                onClick={() => value.DryhandleDetail(id)}
               >
                 <Link to="/details">
                   <img src={img} alt="product" className="card-img-top" />
@@ -23,8 +23,8 @@ export default class Product extends Component {
                   className="cart-btn"
                   disabled={inCart ? true : false}
                   onClick={() => {
-                    value.addToCart(id);
-                    value.openModal(id);
+                    value.DryaddToCart(id);
+                    value.openDryModal(id);
                   }}
                 >
                   {inCart ? (
@@ -51,7 +51,7 @@ export default class Product extends Component {
   }
 }
 
-Product.propTypes = {
+DryProduct.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.number,
     img: PropTypes.string,

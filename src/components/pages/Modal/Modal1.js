@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { ProductConsumer } from "./context";
+import { ProductConsumer } from "../../context";
 import { Link } from "react-router-dom";
 
-export default class Modal extends Component {
+export default class Modal1 extends Component {
   render() {
     return (
       <ProductConsumer>

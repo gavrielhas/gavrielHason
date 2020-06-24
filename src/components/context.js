@@ -1,13 +1,16 @@
 import React, { Component } from "react";
-import { storeProducts, detailProduct } from "../data";
+import { dryFruitProducts, nutsProducts, detailProduct } from "../data";
 
 const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
   state = {
     products: [],
+    Dryproducts: [],
     detailProduct: detailProduct,
     cart: [],
+    DrymodalOpen: false,
+    DrymodalProduct: detailProduct,
     modalOpen: false,
     modalProduct: detailProduct,
     cartSubTotal: 0,
@@ -16,10 +19,11 @@ class ProductProvider extends Component {
   };
   componentDidMount() {
     this.setProducts();
+    this.setDryProducts();
   }
   setProducts = () => {
     let tempProducts = [];
-    storeProducts.forEach((item) => {
+    nutsProducts.forEach((item) => {
       const singleItem = { ...item };
       tempProducts = [...tempProducts, singleItem];
     });
@@ -27,6 +31,101 @@ class ProductProvider extends Component {
       return { products: tempProducts };
     });
   };
+  /* Try begin*/
+  setDryProducts = () => {
+    let DrytempProducts = [];
+    dryFruitProducts.forEach((item) => {
+      const singleItem = { ...item };
+      DrytempProducts = [...DrytempProducts, singleItem];
+    });
+    this.setState(() => {
+      return { Dryproducts: DrytempProducts };
+    });
+  };
+  getDryItem = (id) => {
+    const Dryproduct = this.state.Dryproducts.find((item) => item.id === id);
+    return Dryproduct;
+  };
+  DryhandleDetail = (id) => {
+    const Dryproduct = this.getDryItem(id);
+    this.setState(() => {
+      return { detailProduct: Dryproduct };
+    });
+  };
+  DryaddToCart = (id) => {
+    let DrytempProducts = [...this.state.Dryproducts];
+    const index = DrytempProducts.indexOf(this.getDryItem(id));
+    const Dryproduct = DrytempProducts[index];
+    Dryproduct.inCart = true;
+    Dryproduct.count = 1;
+    const price = Dryproduct.price;
+    Dryproduct.total = price;
+    this.setState(
+      () => {
+        return {
+          Dryproducts: DrytempProducts,
+          cart: [...this.state.cart, Dryproduct],
+        };
+      },
+      () => {
+        this.addTotals();
+      }
+    );
+  };
+  clearCart = () => {
+    this.setState(
+      () => {
+        return { cart: [] };
+      },
+      () => this.setDryProducts(),
+      this.addTotals
+    );
+  };
+  /* 
+  productID = (id) => {
+    let tempProducts = [...this.state.products];
+    const index = tempProducts.indexOf(this.getItem(id));
+    const product = tempProducts[index];
+    const specificProduct = product.id;
+    if(specificProduct)
+  };
+  */
+
+  removeDryItem = (id) => {
+    let DrytempProducts = [...this.state.Dryproducts];
+    let tempCart = [...this.state.cart];
+
+    tempCart = tempCart.filter((item) => item.id !== id);
+    const index = DrytempProducts.indexOf(this.getDryItem(id));
+    let removedDryProduct = DrytempProducts[index];
+    removedDryProduct.inCart = false;
+    removedDryProduct.count = 0;
+    removedDryProduct.total = 0;
+
+    this.setState(
+      () => {
+        return {
+          cart: [...tempCart],
+          Dryproducts: [...DrytempProducts],
+        };
+      },
+      () => {
+        this.addTotals();
+      }
+    );
+  };
+  openDryModal = (id) => {
+    const product = this.getDryItem(id);
+    this.setState(() => {
+      return { DrymodalProduct: product, DrymodalOpen: true };
+    });
+  };
+  closeDryModal = () => {
+    this.setState(() => {
+      return { DrymodalOpen: false };
+    });
+  };
+  /* Try ends*/
 
   getItem = (id) => {
     const product = this.state.products.find((item) => item.id === id);
@@ -97,7 +196,12 @@ class ProductProvider extends Component {
     product.count = product.count - 1;
 
     if (product.count === 0) {
-      this.removeItem(id);
+      if (product.id < 9) {
+        this.removeItem(id);
+      }
+      if (product.id > 9) {
+        this.removeDryItem(id);
+      }
     } else {
       product.total = product.count * product.price;
       this.setState(
@@ -115,6 +219,7 @@ class ProductProvider extends Component {
     let tempCart = [...this.state.cart];
 
     tempCart = tempCart.filter((item) => item.id !== id);
+
     const index = tempProducts.indexOf(this.getItem(id));
     let removedProduct = tempProducts[index];
     removedProduct.inCart = false;
@@ -158,8 +263,12 @@ class ProductProvider extends Component {
       <ProductContext.Provider
         value={{
           ...this.state,
+          DryhandleDetail: this.DryhandleDetail,
+          DryaddToCart: this.DryaddToCart,
           handleDetail: this.handleDetail,
           addToCart: this.addToCart,
+          openDryModal: this.openDryModal,
+          closeDryModal: this.closeDryModal,
           openModal: this.openModal,
           closeModal: this.closeModal,
           increment: this.increment,
