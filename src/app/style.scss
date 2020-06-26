@@ -1,7 +1,9 @@
 @import "_config.scss";
 
+* {
+  font-family: "Rubik", sans-serif;
+}
 header {
-  position: relative;
   display: block;
   width: 100%;
   background: $lightgray;
@@ -169,6 +171,7 @@ strong {
 .ButtonContainer {
   border: 0.05rem solid $lightblue;
   text-transform: capitalize;
+  text-align: right;
   font-size: 1.4rem;
   background: transparent;
   color: $lightblue;
@@ -182,6 +185,7 @@ strong {
   background: transparent;
   border: none;
   color: $lightblue;
+  direction: rtl;
 }
 .btn-black {
   background: transparent;
@@ -228,7 +232,7 @@ strong {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: $black;
 }
 
 /*
@@ -269,9 +273,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 .headerCart {
-  position: fixed;
+  position: absolute;
   right: 6rem;
-  top: 1.6rem;
+  top: 1.8rem;
 }
 
 .img-fluid2 {
@@ -317,4 +321,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 footer {
   background-color: $lightgray;
+}
+p {
+  text-align: right;
+  direction: rtl;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: right;
+  direction: rtl;
+}
+.infoFooter {
+  text-align: right;
 }

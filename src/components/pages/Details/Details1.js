@@ -21,7 +21,7 @@ export default class Details1 extends Component {
               {/* title */}
               <div className="row">
                 <div className=" col-10 mx-auto text-center text-slanted text-blue my-5">
-                  <h1>{title}</h1>
+                  <h1 className="text-center">{title}</h1>
                 </div>
               </div>
               {/* end of title*/}
@@ -33,25 +33,27 @@ export default class Details1 extends Component {
                 </div>
                 {/* product text */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-captialize">
-                  <h1>modle : {title}</h1>
+                  <h1>{title}</h1>
+                  {/* 
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
                     made by : <span className="text-uppercase">{company}</span>
                   </h4>
+                  */}
                   <h4>
                     <strong>
-                      price : <span>$</span>
+                      מחיר : <span>$</span>
                       {price}
                     </strong>
                   </h4>
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                    some info about product
+                    קצת על המוצר
                   </p>
                   <p className="text-muted lead">{info}</p>
                   {/* buttons */}
                   <div>
                     <Link to="/ProductList">
                       <div className="ButtonContainer">
-                        <p>back to products</p>
+                        <p>חזרה לפיצוחים</p>
                       </div>
                     </Link>
                     <div className="ButtonContainer">
@@ -62,7 +64,7 @@ export default class Details1 extends Component {
                           value.addToCart(id);
                         }}
                       >
-                        {inCart ? "in Cart" : " add to cart"}
+                        {inCart ? <p>הוסף לעגלה </p> : <p>הפריט נוסף לעגלה</p>}
                       </button>
                     </div>
                   </div>

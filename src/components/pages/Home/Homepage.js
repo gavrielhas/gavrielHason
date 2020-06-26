@@ -4,30 +4,32 @@ import { Link } from "react-router-dom";
 function Homepage() {
   return (
     <React.Fragment>
-      <h1 className="text-center header py-3">Pai-delivery</h1>
+      <h1 className="text-center header py-3">
+        <span dir="rtl">פאי משלוחים</span>
+      </h1>
       <section className="py-3">
         <div className="BorderImg">
           <div className=" img-fluid2">
             <h1 className="img-text">
               <Link to="/ProductList">
-                <button className="ButtonImg">To our nuts</button>
+                <button className="ButtonImg">
+                  <span dir="rtl">לפיצוחים שלנו</span>
+                </button>
               </Link>
             </h1>
           </div>
         </div>
 
-        <h1 className="pl-5 pr-5 py-3">Try our nuts</h1>
+        <h1 className="pl-5 pr-5 py-3">
+          <span dir="rtl">קצת על המוצרים שלנו</span>
+        </h1>
         <p className="pl-5 pr-5">
-          Our nuts is well selected, descripiton about the products Lorem Ipsum
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book. It has survived not only five centuries,
-          but also the leap into electronic typesetting, remaining essentially
-          unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
+          <span dir="rtl">
+            לורם איפסום הוא כינוי לטקסט חסר משמעות לחלוטין - הנקרא לפעמים גם דמי
+            טקסט או ג'יבריש - ומיועד להיות ממוקם בסקיצות עיצוביות - של עלונים,
+            מגזינים, מודעות, אתרי אינטרנט וכו' - במקום הטקסט האמיתי הסופי - עד
+            שיהיה טקסט אמיתי
+          </span>
         </p>
       </section>
       <section>
@@ -36,24 +38,25 @@ function Homepage() {
             <div className=" img-fluid3">
               <h1 className="img-text">
                 <Link to="/DryProductList">
-                  <button className="ButtonImg">To our dry fruits</button>
+                  <button className="ButtonImg">
+                    <span dir="rtl">לפירות היבשים שלנו</span>
+                  </button>
                 </Link>
               </h1>
             </div>
           </div>
-
-          <h1 className="pl-5 pr-5 py-3">Try our Dry fruits</h1>
+          <span dir="rtl">
+            <h1 className="headingHome pl-5 pr-5 py-3">
+              קצת על הפירות יבשים שלנו
+            </h1>
+          </span>
           <p className="pl-5 pr-5">
-            Our nuts is well selected, descripiton about the products Lorem
-            Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            <span dir="rtl">
+              לורם איפסום הוא כינוי לטקסט חסר משמעות לחלוטין - הנקרא לפעמים גם
+              דמי טקסט או ג'יבריש - ומיועד להיות ממוקם בסקיצות עיצוביות - של
+              עלונים, מגזינים, מודעות, אתרי אינטרנט וכו' - במקום הטקסט האמיתי
+              הסופי - עד שיהיה טקסט אמיתי
+            </span>
           </p>
         </div>
       </section>

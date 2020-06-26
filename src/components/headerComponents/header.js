@@ -25,7 +25,7 @@ function Header() {
               <span className="mr-2">
                 <i className="fas fa-cart-plus"></i>
               </span>
-              my cart
+              העגלה שלי
             </div>
           </Link>
         </div>

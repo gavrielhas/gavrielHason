@@ -6,7 +6,7 @@ https://www.iconfinder.com/Makoto_msk */
 export const nutsProducts = [
   {
     id: 1,
-    title: "Google Pixel - Black",
+    title: "אגוז ברזילאי 100 גרם",
     img: "img/product-1.jpg",
     price: 10,
     company: "GOOGLE",
@@ -18,7 +18,7 @@ export const nutsProducts = [
   },
   {
     id: 2,
-    title: "Samsung S7",
+    title: "פקאן טבעי",
     img: "img/product-2.jpg",
     price: 16,
     company: "SAMSUNG",
@@ -30,7 +30,7 @@ export const nutsProducts = [
   },
   {
     id: 3,
-    title: "HTC 10 - Black",
+    title: "אגוזי מלך",
     img: "img/product-3.jpg",
     price: 8,
     company: "htc",
@@ -40,21 +40,10 @@ export const nutsProducts = [
     count: 0,
     total: 0,
   },
-  {
-    id: 4,
-    title: "HTC 10 - White",
-    img: "img/product-4.jpg",
-    price: 18,
-    company: "htc",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
-    total: 0,
-  },
+
   {
     id: 5,
-    title: "HTC Desire 626s",
+    title: "קשיו",
     img: "img/product-5.jpg",
     price: 24,
     company: "htc",
@@ -66,8 +55,8 @@ export const nutsProducts = [
   },
   {
     id: 6,
-    title: "Vintage Iphone",
-    img: "img/product-6.png",
+    title: "תערובת אגוזים וצימוקים",
+    img: "img/product-6.jpg",
     price: 17,
     company: "apple",
     info:
@@ -78,7 +67,7 @@ export const nutsProducts = [
   },
   {
     id: 7,
-    title: "Iphone 7",
+    title: "מיקס חריף",
     img: "img/product-7.jpg",
     price: 30,
     company: "apple",
@@ -90,7 +79,7 @@ export const nutsProducts = [
   },
   {
     id: 8,
-    title: "Smashed Iphone",
+    title: "פיסטוק מקולף",
     img: "img/product-8.jpg",
     price: 2,
     company: "apple",
@@ -103,7 +92,7 @@ export const nutsProducts = [
 
   {
     id: 10,
-    title: "Google Pixel - Black",
+    title: "מנצ'ס",
     img: "img/product-10.jpg",
     price: 10,
     company: "GOOGLE",
@@ -115,7 +104,7 @@ export const nutsProducts = [
   },
   {
     id: 11,
-    title: "Google Pixel - Black",
+    title: "שקד מולבן",
     img: "img/product-11.jpg",
     price: 10,
     company: "GOOGLE",
@@ -127,7 +116,7 @@ export const nutsProducts = [
   },
   {
     id: 12,
-    title: "Google Pixel - Black",
+    title: "שקד מולבן",
     img: "img/product-12.jpg",
     price: 10,
     company: "GOOGLE",
@@ -139,7 +128,7 @@ export const nutsProducts = [
   },
   {
     id: 13,
-    title: "Google Pixel - Black",
+    title: "שקד מולבן",
     img: "img/product-13.jpg",
     price: 10,
     company: "GOOGLE",
@@ -151,7 +140,7 @@ export const nutsProducts = [
   },
   {
     id: 14,
-    title: "Google Pixel - Black",
+    title: "שקד מולבן",
     img: "img/product-14.jpg",
     price: 10,
     company: "GOOGLE",
@@ -163,7 +152,7 @@ export const nutsProducts = [
   },
   {
     id: 15,
-    title: "Google Pixel - Black",
+    title: "שקד טחון",
     img: "img/product-15.jpg",
     price: 10,
     company: "GOOGLE",
@@ -175,7 +164,7 @@ export const nutsProducts = [
   },
   {
     id: 16,
-    title: "Google Pixel - Black",
+    title: "בוטנים קלויים גרוסים",
     img: "img/product-16.jpg",
     price: 10,
     company: "GOOGLE",
@@ -187,7 +176,7 @@ export const nutsProducts = [
   },
   {
     id: 17,
-    title: "Google Pixel - Black",
+    title: "גרעיני דלעת",
     img: "img/product-17.jpg",
     price: 10,
     company: "GOOGLE",
@@ -199,7 +188,7 @@ export const nutsProducts = [
   },
   {
     id: 18,
-    title: "Google Pixel - Black",
+    title: "קוקוס",
     img: "img/product-18.jpg",
     price: 10,
     company: "GOOGLE",
@@ -211,7 +200,7 @@ export const nutsProducts = [
   },
   {
     id: 19,
-    title: "Google Pixel - Black",
+    title: "צנובר",
     img: "img/product-19.jpg",
     price: 10,
     company: "GOOGLE",
@@ -223,7 +212,7 @@ export const nutsProducts = [
   },
   {
     id: 20,
-    title: "Google Pixel - Black",
+    title: "גוג'י ברי",
     img: "img/product-20.jpg",
     price: 10,
     company: "GOOGLE",
@@ -235,7 +224,7 @@ export const nutsProducts = [
   },
   {
     id: 21,
-    title: "Google Pixel - Black",
+    title: "אגוזי מלך טחון",
     img: "img/product-21.jpg",
     price: 10,
     company: "GOOGLE",
@@ -247,7 +236,7 @@ export const nutsProducts = [
   },
   {
     id: 22,
-    title: "Google Pixel - Black",
+    title: "פרג",
     img: "img/product-22.jpg",
     price: 10,
     company: "GOOGLE",
@@ -259,7 +248,7 @@ export const nutsProducts = [
   },
   {
     id: 23,
-    title: "Google Pixel - Black",
+    title: "גרעיני חמניה מקולף",
     img: "img/product-23.jpg",
     price: 10,
     company: "GOOGLE",
@@ -271,7 +260,7 @@ export const nutsProducts = [
   },
   {
     id: 24,
-    title: "Google Pixel - Black",
+    title: "שומשום",
     img: "img/product-24.jpg",
     price: 10,
     company: "GOOGLE",
@@ -286,7 +275,7 @@ export const nutsProducts = [
 export const dryFruitProducts = [
   {
     id: 25,
-    title: "Google Pixel - Black",
+    title: "פפאיה",
     img: "img/product-25.jpg",
     price: 10,
     company: "GOOGLE",
@@ -298,7 +287,7 @@ export const dryFruitProducts = [
   },
   {
     id: 26,
-    title: "Samsung S7",
+    title: "צימוק",
     img: "img/product-26.jpg",
     price: 16,
     company: "SAMSUNG",
@@ -310,7 +299,7 @@ export const dryFruitProducts = [
   },
   {
     id: 27,
-    title: "HTC 10 - Black",
+    title: "דובדבנים אדום",
     img: "img/product-27.jpg",
     price: 8,
     company: "htc",
@@ -322,7 +311,7 @@ export const dryFruitProducts = [
   },
   {
     id: 28,
-    title: "HTC 10 - White",
+    title: "שזיף מגולען",
     img: "img/product-28.jpg",
     price: 18,
     company: "htc",
@@ -334,7 +323,7 @@ export const dryFruitProducts = [
   },
   {
     id: 29,
-    title: "HTC Desire 626s",
+    title: "משמש",
     img: "img/product-29.jpg",
     price: 24,
     company: "htc",
@@ -346,7 +335,7 @@ export const dryFruitProducts = [
   },
   {
     id: 30,
-    title: "Vintage Iphone",
+    title: "חמוציות",
     img: "img/product-30.jpg",
     price: 17,
     company: "apple",
@@ -358,7 +347,7 @@ export const dryFruitProducts = [
   },
   {
     id: 31,
-    title: "Iphone 7",
+    title: "בננה צ'יפס",
     img: "img/product-31.jpg",
     price: 30,
     company: "apple",
@@ -370,7 +359,7 @@ export const dryFruitProducts = [
   },
   {
     id: 32,
-    title: "Smashed Iphone",
+    title: "צימוק",
     img: "img/product-32.jpg",
     price: 2,
     company: "apple",
@@ -380,21 +369,10 @@ export const dryFruitProducts = [
     count: 0,
     total: 0,
   },
-  {
-    id: 33,
-    title: "Google Pixel - Black",
-    img: "img/product-33.png",
-    price: 10,
-    company: "GOOGLE",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
-    total: 0,
-  },
+
   {
     id: 34,
-    title: "Google Pixel - Black",
+    title: "תמרים ממולאים",
     img: "img/product-34.jpg",
     price: 10,
     company: "GOOGLE",
@@ -406,7 +384,7 @@ export const dryFruitProducts = [
   },
   {
     id: 35,
-    title: "Google Pixel - Black",
+    title: "תפוח מיובש",
     img: "img/product-35.jpg",
     price: 10,
     company: "GOOGLE",
@@ -418,7 +396,7 @@ export const dryFruitProducts = [
   },
   {
     id: 36,
-    title: "Google Pixel - Black",
+    title: "תמר מגה'ול",
     img: "img/product-36.jpg",
     price: 10,
     company: "GOOGLE",
@@ -430,7 +408,7 @@ export const dryFruitProducts = [
   },
   {
     id: 37,
-    title: "Google Pixel - Black",
+    title: "אננס",
     img: "img/product-37.jpg",
     price: 10,
     company: "GOOGLE",
@@ -442,7 +420,7 @@ export const dryFruitProducts = [
   },
   {
     id: 38,
-    title: "Google Pixel - Black",
+    title: "מנגו",
     img: "img/product-38.jpg",
     price: 10,
     company: "GOOGLE",
@@ -454,7 +432,7 @@ export const dryFruitProducts = [
   },
   {
     id: 39,
-    title: "Google Pixel - Black",
+    title: "שקד טבעי",
     img: "img/product-39.jpg",
     price: 10,
     company: "GOOGLE",
@@ -466,7 +444,7 @@ export const dryFruitProducts = [
   },
   {
     id: 40,
-    title: "Google Pixel - Black",
+    title: "שזיף",
     img: "img/product-40.jpg",
     price: 10,
     company: "GOOGLE",
@@ -478,7 +456,7 @@ export const dryFruitProducts = [
   },
   {
     id: 41,
-    title: "Google Pixel - Black",
+    title: "צימוק",
     img: "img/product-41.jpg",
     price: 10,
     company: "GOOGLE",
@@ -490,7 +468,7 @@ export const dryFruitProducts = [
   },
   {
     id: 42,
-    title: "Google Pixel - Black",
+    title: "תות שדה מיובש",
     img: "img/product-42.jpg",
     price: 10,
     company: "GOOGLE",

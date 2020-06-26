@@ -22,16 +22,16 @@ export default class Modal1 extends Component {
                       id="modal"
                       className="col-9 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5"
                     >
-                      <h5>item added to the cart</h5>
+                      <h5>הפריט נוסף לעגלה</h5>
                       <img src={img} className="img-fluid" alt="product" />
                       <h5>{title}</h5>
-                      <h5 className="text-muted">price : $ {price}</h5>
+                      <h5 className="text-muted">מחיר : ₪ {price}</h5>
                       <Link to="/ProductList">
                         <div
                           className="ButtonContainer"
                           onClick={() => closeModal()}
                         >
-                          store
+                          להמשך קניה
                         </div>
                       </Link>
                       <Link to="/cart">
@@ -39,7 +39,7 @@ export default class Modal1 extends Component {
                           className="ButtonContainer"
                           onClick={() => closeModal()}
                         >
-                          go to cart
+                          לעגלה
                         </div>
                       </Link>
                     </div>

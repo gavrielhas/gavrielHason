@@ -28,11 +28,13 @@ export default class DryProduct extends Component {
                   }}
                 >
                   {inCart ? (
-                    <p className="text-capitalize mb-0" disabled>
-                      in cart
+                    <p className="inCartproduct text-capitalize mb-0" disabled>
+                      בעגלה
                     </p>
                   ) : (
-                    <p className="text-capitalize mb-0">add to cart</p>
+                    <p className="inCartproduct text-capitalize mb-0">
+                      הוסף לעגלה
+                    </p>
                   )}
                 </button>
               </div>
@@ -40,10 +42,10 @@ export default class DryProduct extends Component {
           </ProductConsumer>
           {/* card footer*/}
           <div className="card-footer d-flex justify-content-between">
-            <p className="align-self-center mb-0">{title}</p>
             <h5 className="font-italic mb-0">
-              <span className="mr-1">${price}</span>
+              <span className="ml-1">₪ {price}</span>
             </h5>
+            <p className="align-self-center mb-0">{title}</p>
           </div>
         </div>
       </div>

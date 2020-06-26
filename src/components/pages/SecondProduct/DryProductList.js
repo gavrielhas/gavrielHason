@@ -8,7 +8,7 @@ export default class DryProductList extends Component {
     return (
       <React.Fragment>
         <div className="py-5">
-          <h1 className="header text-capitalize text-center "> pai delivery</h1>
+          <h1 className="header text-capitalize text-center "> פאי-משלוחים</h1>
           <div className="container">
             <div className="row">
               <ProductConsumer>

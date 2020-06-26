@@ -42,7 +42,7 @@ export default class Example extends React.Component {
             className="menu-item text-capitalize"
             to="/"
           >
-            home
+            <p>דף הבית</p>
           </Link>
           <Link
             onClick={() => this.closeMenu()}
@@ -50,7 +50,7 @@ export default class Example extends React.Component {
             id="home"
             to="/ProductList"
           >
-            product list
+            <p>אגוזים ופיצוחים</p>
           </Link>
 
           <Link
@@ -59,24 +59,16 @@ export default class Example extends React.Component {
             id="home"
             to="/DryProductList"
           >
-            dry product list
+            <p>פירות יבשים</p>
           </Link>
 
-          <Link
-            onClick={() => this.closeMenu()}
-            id="contact"
-            className="menu-item text-capitalize"
-            to="/"
-          >
-            Contact
-          </Link>
           <Link
             onClick={() => this.closeMenu()}
             id="cart"
             className="menu-item text-capitalize"
             to="/cart"
           >
-            cart
+            <p>עגלה</p>
           </Link>
         </Menu>
       </div>
