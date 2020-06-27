@@ -22,7 +22,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route path="/ProductList" component={ProductList} />
+        <Route exact path="/ProductList" component={ProductList} />
         <Route path="/DryProductList" component={DryProductList} />
         <Route path="/Details1" component={Details1} />
         <Route path="/Details2" component={Details2} />
