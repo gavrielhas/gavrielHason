@@ -2,16 +2,18 @@ $black: #010000;
 $green: rgb(78, 204, 78);
 $white: #ffffff;
 $yellow: #e7eb0c;
-$lightgray: #e6e6e6;
+$lightgray: #aee070;
 $darkgray: rgb(207, 202, 202);
 $red: #d1cecf;
-$lightblue: rgba(11, 106, 214, 0.705);
+$lightblue: #43bbe0;
 $blue: rgb(38, 38, 238);
 $borderColorProduct: #1d1c1c;
 $productFooter: #e4e4e4ce;
+$color1: #e09c59;
 
 body {
   font-size: 18px;
+  background-color: $color1;
   color: $black;
   font-weight: 400;
   font-style: normal;
