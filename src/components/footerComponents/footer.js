@@ -33,7 +33,7 @@ function Footer() {
         </p>
         <br />
         <p className="text-center">
-          <strong> Copyright &copy; 2020</strong>
+          <strong> &copy; Copyright 2020 Pai-Delivery.com</strong>
         </p>
       </div>
     </footer>
