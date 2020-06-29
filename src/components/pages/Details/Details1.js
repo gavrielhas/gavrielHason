@@ -33,7 +33,7 @@ export default class Details1 extends Component {
                   */}
                   <h4>
                     <strong>
-                      מחיר : <span>$</span>
+                      מחיר : <span>₪</span>
                       {price}
                     </strong>
                   </h4>
