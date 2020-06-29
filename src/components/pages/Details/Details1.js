@@ -12,10 +12,13 @@ export default class Details1 extends Component {
             <div className="container py-5">
               {/* title */}
               <div className="row">
+                {/* 
                 <div className=" col-10 mx-auto text-center text-slanted text-blue my-5">
                   <h1 className="text-center">{title}</h1>
                 </div>
+                */}
               </div>
+
               {/* end of title*/}
               {/* product info*/}
 
