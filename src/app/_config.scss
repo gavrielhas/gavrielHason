@@ -1,16 +1,23 @@
 $black: #010000;
 $green: rgb(78, 204, 78);
 $white: #ffffff;
-$yellow: #e7eb0c;
-$lightgray: #aee070;
+$yellow: #3aaf4eb0;
+$yellow1: #faed3c;
+$lightgray: #29b329;
 $darkgray: rgb(207, 202, 202);
 $red: #d1cecf;
-$lightblue: #43bbe0;
+$lightblue: rgb(38, 38, 238);
 $blue: rgb(38, 38, 238);
 $borderColorProduct: #1d1c1c;
 $productFooter: #e4e4e4ce;
+$color1: rgba(248, 237, 237, 0.925);
+/*
+option colors:
 $color1: #e09c59;
+$color1: #43bbe0;
+$color1: #aee070;
 
+*/
 body {
   font-size: 18px;
   background-color: $color1;
