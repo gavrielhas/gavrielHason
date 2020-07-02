@@ -335,3 +335,24 @@ h5 {
 .infoFooter {
   text-align: right;
 }
+.increase {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  cursor: pointer;
+}
+.item-amount {
+  text-align: center;
+  justify-content: center;
+  padding: 0.001rem 0.002rem;
+  margin: 0.1rem 0.1rem;
+}

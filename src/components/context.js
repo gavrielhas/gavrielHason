@@ -19,6 +19,14 @@ class ProductProvider extends Component {
   };
   componentDidMount() {
     this.setProducts();
+    const cart = localStorage.getItem("myCart");
+    this.setState(
+      { cart: JSON.parse(cart) ? JSON.parse(cart) : [] },
+
+      this.addTotal
+    );
+    const totals = localStorage.getItem("myTotals");
+    this.setState({ totals: JSON.parse(totals) ? JSON.parse(totals) : 0 });
     this.setDryProducts();
   }
   setProducts = () => {
@@ -69,9 +77,15 @@ class ProductProvider extends Component {
       },
       () => {
         this.addTotals();
+        localStorage.setItem("myCart", JSON.stringify(this.state.cart));
       }
     );
   };
+
+  saveCart = (cart) => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  };
+
   clearCart = () => {
     this.setState(
       () => {
@@ -129,6 +143,7 @@ class ProductProvider extends Component {
 
   getItem = (id) => {
     const product = this.state.products.find((item) => item.id === id);
+
     return product;
   };
 
@@ -156,6 +171,7 @@ class ProductProvider extends Component {
       },
       () => {
         this.addTotals();
+        localStorage.setItem("myCart", JSON.stringify(this.state.cart));
       }
     );
   };
@@ -185,6 +201,7 @@ class ProductProvider extends Component {
       },
       () => {
         this.addTotals();
+        localStorage.setItem("myCart", JSON.stringify(this.state.cart));
       }
     );
   };
@@ -210,6 +227,7 @@ class ProductProvider extends Component {
         },
         () => {
           this.addTotals();
+          localStorage.setItem("myCart", JSON.stringify(this.state.cart));
         }
       );
     }
@@ -235,6 +253,7 @@ class ProductProvider extends Component {
       },
       () => {
         this.addTotals();
+        localStorage.removeItem("myCart", JSON.stringify(this.state.cart));
       }
     );
   };
@@ -249,11 +268,14 @@ class ProductProvider extends Component {
   };
   addTotals = () => {
     let subTotal = 0;
+
     this.state.cart.map((item) => (subTotal += item.total));
     const tempTax = subTotal * 0.1;
     const tax = parseFloat(tempTax.toFixed(2));
-    const total = subTotal + tax;
+    const tempTotal = subTotal + tax;
+    const total = parseFloat(tempTotal.toFixed(2));
     this.setState(() => {
+      localStorage.setItem("myTotals", this.state.cartTotal);
       return { cartSubTotal: subTotal, cartTax: tax, cartTotal: total };
     });
   };
