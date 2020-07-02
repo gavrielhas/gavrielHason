@@ -59,7 +59,7 @@ export default class Details1 extends Component {
                           value.addToCart(id);
                         }}
                       >
-                        {inCart ? <p>הוסף לעגלה </p> : <p>הפריט נוסף לעגלה</p>}
+                        {inCart ? <p>הפריט נוסף לעגלה</p> : <p>הוסף לעגלה </p>}
                       </button>
                     </div>
                   </div>

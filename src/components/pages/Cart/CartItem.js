@@ -1,8 +1,7 @@
 import React from "react";
 
 export default function CartItem({ item, value }) {
-  const { id, title, img, price, count } = item;
-  const { cartTotal } = value;
+  const { id, title, img, price, total, count } = item;
   const { increment, decrement, removeItem, removeDryItem } = value;
 
   return (
@@ -52,7 +51,7 @@ export default function CartItem({ item, value }) {
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <strong>מחיר כולל: ₪ {cartTotal}</strong>
+        <strong>מחיר כולל: ₪ {total}</strong>
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ export default class Details extends Component {
                           value.DryaddToCart(id);
                         }}
                       >
-                        {inCart ? "בעגלה" : " הוסף"}
+                        {inCart ? <p>הפריט נוסף לעגלה</p> : <p>הוסף לעגלה </p>}
                       </button>
                     </div>
                   </div>

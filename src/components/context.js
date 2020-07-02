@@ -25,8 +25,8 @@ class ProductProvider extends Component {
 
       this.addTotal
     );
-    const totals = localStorage.getItem("myTotals");
-    this.setState({ totals: JSON.parse(totals) ? JSON.parse(totals) : 0 });
+    const cartTotal = localStorage.getItem("myTotals");
+    this.setState({ cartTotal: JSON.parse(cartTotal) });
     this.setDryProducts();
   }
   setProducts = () => {
@@ -82,17 +82,14 @@ class ProductProvider extends Component {
     );
   };
 
-  saveCart = (cart) => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  };
-
   clearCart = () => {
     this.setState(
       () => {
         return { cart: [] };
       },
       () => this.setDryProducts(),
-      this.addTotals
+      this.addTotals,
+      localStorage.clear("myTotals", this.state.cartTotal)
     );
   };
   /* 
@@ -125,6 +122,8 @@ class ProductProvider extends Component {
       },
       () => {
         this.addTotals();
+        localStorage.removeItem("myCart", JSON.stringify(this.state.cart));
+        localStorage.removeItem("myTotals", this.state.cartTotal);
       }
     );
   };
@@ -202,6 +201,7 @@ class ProductProvider extends Component {
       () => {
         this.addTotals();
         localStorage.setItem("myCart", JSON.stringify(this.state.cart));
+        localStorage.setItem("myTotals", this.state.cartTotal);
       }
     );
   };
@@ -228,6 +228,7 @@ class ProductProvider extends Component {
         () => {
           this.addTotals();
           localStorage.setItem("myCart", JSON.stringify(this.state.cart));
+          localStorage.setItem("myTotals", this.state.cartTotal);
         }
       );
     }
@@ -254,6 +255,7 @@ class ProductProvider extends Component {
       () => {
         this.addTotals();
         localStorage.removeItem("myCart", JSON.stringify(this.state.cart));
+        localStorage.removeItem("myTotals", this.state.cartTotal);
       }
     );
   };
@@ -263,7 +265,8 @@ class ProductProvider extends Component {
         return { cart: [] };
       },
       () => this.setProducts(),
-      this.addTotals
+      this.addTotals,
+      localStorage.clear("myTotals", this.state.cartTotal)
     );
   };
   addTotals = () => {
@@ -275,7 +278,6 @@ class ProductProvider extends Component {
     const tempTotal = subTotal + tax;
     const total = parseFloat(tempTotal.toFixed(2));
     this.setState(() => {
-      localStorage.setItem("myTotals", this.state.cartTotal);
       return { cartSubTotal: subTotal, cartTax: tax, cartTotal: total };
     });
   };
