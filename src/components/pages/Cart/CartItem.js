@@ -1,4 +1,5 @@
 import React from "react";
+import trash from "./icons8-trash-24.png";
 
 export default function CartItem({ item, value }) {
   const { id, title, img, price, total, count } = item;
@@ -47,7 +48,8 @@ export default function CartItem({ item, value }) {
             }
           }}
         >
-          <i className="fas fa-trash" />
+          <img src={trash} alt="trash" className="trash" />
+          {/* <i className="fas fa-trash" />*/}
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">
