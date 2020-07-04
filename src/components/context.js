@@ -195,7 +195,6 @@ class ProductProvider extends Component {
       },
       () => {
         this.addTotals();
-        localStorage.setItem("myCart", JSON.stringify(this.state.cart));
       }
     );
   };
@@ -207,10 +206,8 @@ class ProductProvider extends Component {
     product.count = product.count - 1;
 
     if (product.count === 0) {
-      localStorage.removeItem("myCart", JSON.stringify(this.state.cart));
       if (product.id < 25) {
         this.removeItem(id);
-        localStorage.removeItem("myCart", JSON.stringify(this.state.cart));
       }
       if (product.id > 24) {
         this.removeDryItem(id);
@@ -248,7 +245,6 @@ class ProductProvider extends Component {
       },
       () => {
         this.addTotals();
-        localStorage.removeItem("myCart", JSON.stringify(this.state.cart));
       }
     );
   };
