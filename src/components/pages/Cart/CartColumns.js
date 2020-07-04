@@ -11,7 +11,7 @@ export default function CartColumns() {
           <p className="text-uppercase">שם המוצר</p>
         </div>
         <div className="col-10 mx-0-auto col-lg-2">
-          <p className="text-uppercase">מחיר</p>
+          <p className="text-uppercase">מחיר פריט</p>
         </div>
         <div className="col-10 mx-0-auto col-lg-2">
           <p className="text-uppercase">כמות</p>
@@ -20,7 +20,7 @@ export default function CartColumns() {
           <p className="text-uppercase">מחק מוצר</p>
         </div>
         <div className="col-10 mx-0-auto col-lg-2">
-          <p className="text-uppercase">מוצרים</p>
+          <p className="text-uppercase">מחיר</p>
         </div>
       </div>
     </div>
