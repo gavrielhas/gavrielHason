@@ -42,6 +42,9 @@ export default function CartTotals({ value, history }) {
               clearCart={clearCart}
               history={history}
             />
+            <Link to="/Checkout">
+              <button>Checkout</button>
+            </Link>
           </div>
         </div>
       </div>

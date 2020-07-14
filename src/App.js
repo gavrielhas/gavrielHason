@@ -15,6 +15,7 @@ import Default from "./components/pages/Default/Default";
 import DryProductList from "./components/pages/SecondProduct/DryProductList";
 import Details1 from "./components/pages/Details/Details1";
 import Details2 from "./components/pages/Details/Details2";
+import Checkout from "./components/pages/Cart/Checkout";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <Route path="/Details1" component={Details1} />
         <Route path="/Details2" component={Details2} />
         <Route path="/cart" component={Cart} />
+
+        <Route path="/Checkout" component={Checkout} />
         <Route component={Default} />
       </Switch>
       <Modal1 />
