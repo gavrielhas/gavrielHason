@@ -358,6 +358,7 @@ h5 {
 }
 
 //Checkout form css
+/*
 .Checkout {
   max-width: 420px;
   margin: 0 auto;
@@ -395,4 +396,83 @@ input[type="submit"]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+*/
 //end of checkout css
+//Checkout Ofek
+
+.CheckoutBackground {
+  background-color: transparent !important;
+  background-image: url(../../components/pages/Cart/Checkout/mike-c-s--KvhihREsxU-unsplash.jpg);
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+//end Checkout Ofek
+.form-style-9 {
+  max-width: 50rem;
+  background: #fafafa;
+  padding: 30px;
+  margin: 0rem auto;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: 6px solid $brown;
+}
+.form-style-9 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.form-style-9 ul li {
+  ::placeholder {
+    text-align: right;
+  }
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+.form-style-9 ul li .field-style {
+  box-sizing: border-box;
+
+  padding: 8px;
+  outline: none;
+  border: 1px solid $brown-border;
+}
+.form-style-9 ul li .field-style:focus {
+  box-shadow: 0 0 5px $brown-border;
+  border: 1px solid $brown-border;
+}
+.form-style-9 ul li .field-split {
+  width: 49%;
+  margin: 0.2rem;
+}
+.form-style-9 ul li .field-full {
+  width: 100%;
+}
+.form-style-9 ul li input.align-left {
+  float: left;
+}
+.form-style-9 ul li input.align-right {
+  float: right;
+}
+.form-style-9 ul li textarea {
+  width: 100%;
+  height: 100px;
+}
+.form-style-9 ul li input[type="button"],
+.form-style-9 ul li input[type="submit"] {
+  box-shadow: inset 0px 1px 0px 0px $brown;
+  background-color: $brown;
+  border: 1px solid $brown-dark;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px 18px;
+  text-decoration: none;
+  font: 20px Arial, Helvetica, sans-serif;
+  float: right;
+}
+
+.form-style-9 ul li input[type="button"]:hover,
+.form-style-9 ul li input[type="submit"]:hover {
+  background: linear-gradient(to bottom, $brown 5%, $brown-dark 100%);
+  background-color: $brown-dark;
+}

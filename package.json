@@ -9,9 +9,10 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "boostrap": "^2.0.0",
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.2",
     "checkout.js": "^2.1.21",
     "cp-react-px-shipping": "^1.1.18",
+    "express": "^4.17.1",
     "final-form": "^4.20.1",
     "form-backend-validation": "^2.3.9",
     "gulp": "^4.0.2",
@@ -20,6 +21,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
     "react-burger-menu": "^2.6.17",
     "react-dom": "^16.13.1",
     "react-final-form": "^6.5.0",
@@ -28,9 +30,11 @@
     "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-validation": "^3.0.7",
     "store": "^2.0.12",
     "styled-components": "^5.1.1",
-    "switch": "0.0.0"
+    "switch": "0.0.0",
+    "validator": "^13.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

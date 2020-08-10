@@ -17,11 +17,10 @@ if(isset($postdata) && !empty($postdata)){
     $SpecialReq=$request->SpecialReq;
 
 }
-
 $query = mysqli_query($con, "INSERT INTO `Adresses` (`id`, `fname`, `email`, `Specialreq`) VALUES (NULL, '{$fname}', '{$email}', '{$SpecialReq}')");
 echo "Error: " . mysqli_error($con);
 
-
+echo $email;
 if(mysqli_query($con, $query)){
     http_response_code(201);
 }else{

@@ -15,7 +15,7 @@ import Default from "./components/pages/Default/Default";
 import DryProductList from "./components/pages/SecondProduct/DryProductList";
 import Details1 from "./components/pages/Details/Details1";
 import Details2 from "./components/pages/Details/Details2";
-import Checkout from "./components/pages/Cart/Checkout";
+import Checkout from "./components/pages/Cart/Checkout/Checkout";
 
 function App() {
   return (

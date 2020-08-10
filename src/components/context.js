@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { dryFruitProducts, nutsProducts, detailProduct } from "../data";
+import axios from "axios";
 
 const ProductContext = React.createContext();
 
@@ -17,6 +18,59 @@ class ProductProvider extends Component {
     cartTax: 0,
     cartTotal: 0,
   };
+
+  //Send to localhost
+
+  clearAndAdd = () => {
+    const cartData = JSON.parse(localStorage.getItem("myCart"));
+    const price = cartData.map((data) => data.total);
+    const title = cartData.map((data) => data.title);
+    const amount = cartData.map((data) => data.count);
+
+    const fd = new FormData();
+
+    fd.append("title", title);
+    fd.append("price", price);
+    fd.append("amount", amount);
+
+    var headers = {
+      "Content-Type": "application/json;charset=UTF-8",
+      "Access-Control-Allow-Origin": "http://localhost:8080/index.php",
+    };
+    axios.post("http://localhost:8080/index.php", fd, headers).then((res) => {
+      alert(res.data.data);
+    });
+    this.setState(
+      () => {
+        return { cart: [] };
+      },
+      () => this.setProducts(),
+      this.addTotals
+    );
+  };
+
+  addCartdata = () => {
+    const cartData = JSON.parse(localStorage.getItem("myCart"));
+    const price = cartData.map((data) => data.total);
+    const title = cartData.map((data) => data.title);
+    const amount = cartData.map((data) => data.count);
+
+    const fd = new FormData();
+
+    fd.append("title", title);
+    fd.append("price", price);
+    fd.append("amount", amount);
+
+    var headers = {
+      "Content-Type": "application/json;charset=UTF-8",
+      "Access-Control-Allow-Origin": "http://localhost:8080/index.php",
+    };
+    axios.post("http://localhost:8080/index.php", fd, headers).then((res) => {
+      alert(res.data.data);
+    });
+  };
+
+  //end sending to localhost
   componentDidMount() {
     this.setProducts();
     this.setDryProducts();
@@ -39,7 +93,7 @@ class ProductProvider extends Component {
       return { products: tempProducts };
     });
   };
-  /* Try begin*/
+
   setDryProducts = () => {
     let DrytempProducts = [];
     dryFruitProducts.forEach((item) => {
@@ -290,6 +344,7 @@ class ProductProvider extends Component {
           removeItem: this.removeItem,
           removeDryItem: this.removeDryItem,
           clearCart: this.clearCart,
+          addCartdata: this.addCartdata,
         }}
       >
         {this.props.children}
